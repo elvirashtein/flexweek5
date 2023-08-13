@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page</title>
+    <style>
+      .flex-container {
+        dispay: flex;
+        border: 1px solid red;
+      }
+      .header {
+        border: 1px solid red;
+        justify-content: center;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        background-color: rgb(199, 180, 161);
+      }
+      body {
+        dispay: flex;
+        flex-flow: column;
+        min-height: 100vh;
+      }
+
+      .aside {
+        width: 50vh;
+        background-color: plum;
+        min-height: 50vh;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aquamarine;
+        height: 100px;
+      }
+      .section {
+        border: 1px solid red;
+        flex: 1;
+        min-height: 10vh;
+        min-width: 50vh;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <header class="header" ;>Заголовок</header>
+              <main class="main" ;>
+          <p>Основная часть</p>
+          <section class="section" ;>Еще 1</section>
+          <section class="section" ;>Еще 2</section>
+          <section class="section" ;>Еще 3</section>
+        
+        <aside class="aside" ;>Боковая часть</aside>
+      </div></main>
+      <footer class="footer" ;>
+        <section class="section" ;>Секция1</section>
+        <section class="section" ;>Секция2</section>
+        <section class="section" ;>Секция3</section>
+        <section class="section" ;>Секция4</section>
+      </footer>
+    </div>
+  </body>
+</html>
